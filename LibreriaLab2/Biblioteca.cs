@@ -1,4 +1,14 @@
-public class Biblioteca
+public interface IBiblioteca
+{
+    void AddLibros(string nombre, string autor, int año, string genero);
+    void AddLibros(Libro libro);
+    bool isAvailable(string nombre);
+    List<Libro> Getlibros();
+    int GetCount();
+}
+
+
+public class Biblioteca: IBiblioteca
     {
         private List<Libro> Libros;
 
