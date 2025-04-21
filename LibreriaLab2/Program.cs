@@ -3,10 +3,9 @@
 
 
 Biblioteca biblioteca = new Biblioteca();
-biblioteca.AddLibros("El Quijote");
-biblioteca.AddLibros("El Principito");
-biblioteca.AddLibros("Cien años de soledad");
-biblioteca.AddLibros("El amor en los tiempos del cólera");
+biblioteca.AddLibros("El Quijote", "Miguel de Cervantes", 1605, "Novela");
+biblioteca.AddLibros("Cien años de soledad", "Gabriel García Márquez", 1967, "Novela");
+biblioteca.AddLibros("El Gran Gatsby", "F. Scott Fitzgerald", 1925, "Novela");
 
 Console.WriteLine("Libros en la librería:");
 foreach (var libro in biblioteca.Getlibros())

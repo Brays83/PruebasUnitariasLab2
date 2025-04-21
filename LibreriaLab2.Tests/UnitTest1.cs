@@ -16,13 +16,11 @@ public class Tests
     [Test]
     public void AñadirLibro_ResultadoCorrecto()
     {
-        string libro = "El Quijote";
-        string libro2 = "El Principito";
 
-        _libreria.AddLibros(libro);
-        _libreria.AddLibros(libro2);
+        _libreria.AddLibros("El Quijote", "Miguel de Cervantes", 1605, "Novela");
+        _libreria.AddLibros("El Principito", "Antoine de Saint-Exupéry", 1943, "Novela");
 
-        var libros = _libreria.Getlibros;
+        var Cantidadlibros = _libreria.Getlibros;
 
         Assert.That(_libreria.GetCount(), Is.EqualTo(2), $"Esperaba 2 libros, pero se encontraron {_libreria.GetCount()}.");
 
@@ -38,14 +36,13 @@ public class Tests
     [Test]
     public void ComprobarLibro_ResultadoCorrecto()
     {
-        string libro = "El Quijote";
-        //string libro2 = "El Principito";
+        var libro = new Libro("El Quijote", "Miguel de Cervantes", 1605, "Novela");
 
         _libreria.AddLibros(libro);
 
 
         //Assert.That(valor a obtener, condicion, mensajeSiFalla);
-        Assert.That(_libreria.isAvailable(libro), Is.True, $"El libro {libro} debería estar disponible.");
+        Assert.That(_libreria.isAvailable(libro.GetTitle()), Is.True, $"El libro {libro} debería estar disponible.");
  
         
     }

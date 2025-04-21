@@ -1,23 +1,33 @@
 public class Biblioteca
     {
-        private List<string> Libros;
+        private List<Libro> Libros;
 
         public Biblioteca()
         {
-            Libros = new List<string>();
+            Libros = new List<Libro>();
         }
 
-        public void AddLibros(string libros)
+        public void AddLibros(string nombre, string autor, int año, string genero)
         {
+            Libro libros = new Libro(nombre, autor, año, genero);
+            
             Libros.Add(libros);
         }
 
-        public bool isAvailable(string libros)
+        public void AddLibros(Libro libro)
         {
-            return Libros.Contains(libros);
+            Libros.Add(libro);
+        }
+        
+
+
+        public bool isAvailable(string nombre)
+        {
+            return Libros.Any(libro => 
+            libro.GetTitle().Equals(nombre, StringComparison.OrdinalIgnoreCase));
         }
 
-        public List<string> Getlibros()
+        public List<Libro> Getlibros()
         {
             return Libros;
         }
