@@ -1,7 +1,0 @@
-F:\Proyectos\06-C#\PruebasUnitariasLab2\LibreriaLab2.Tests\bin\Debug\net9.0\.msCoverageSourceRootsMapping_LibreriaLab2.Tests
-F:\Proyectos\06-C#\PruebasUnitariasLab2\LibreriaLab2.Tests\bin\Debug\net9.0\CoverletSourceRootsMapping_LibreriaLab2.Tests
-F:\Proyectos\06-C#\PruebasUnitariasLab2\LibreriaLab2.Tests\obj\Debug\net9.0\LibreriaLab2.Tests.csproj.AssemblyReference.cache
-F:\Proyectos\06-C#\PruebasUnitariasLab2\LibreriaLab2.Tests\obj\Debug\net9.0\LibreriaLab2.Tests.GeneratedMSBuildEditorConfig.editorconfig
-F:\Proyectos\06-C#\PruebasUnitariasLab2\LibreriaLab2.Tests\obj\Debug\net9.0\LibreriaLab2.Tests.AssemblyInfoInputs.cache
-F:\Proyectos\06-C#\PruebasUnitariasLab2\LibreriaLab2.Tests\obj\Debug\net9.0\LibreriaLab2.Tests.AssemblyInfo.cs
-F:\Proyectos\06-C#\PruebasUnitariasLab2\LibreriaLab2.Tests\obj\Debug\net9.0\LibreriaLab2.Tests.csproj.CoreCompileInputs.cache
